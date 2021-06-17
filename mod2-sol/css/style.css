@@ -26,10 +26,21 @@ p {
     float: right;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: salmon;
     text-align: center;
     border: 1px solid black;
     font-size: 125%;
+}
+
+#chicken {
+    background-color: salmon;
+}
+
+#beef {
+    background-color: maroon;
+}
+
+#sushi {
+    background-color: moccasin;
 }
 
 .text {
