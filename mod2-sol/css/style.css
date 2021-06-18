@@ -1,8 +1,6 @@
 /********** Base styles **********/
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 h1 {
@@ -13,22 +11,24 @@ h1 {
 }
 
 p {
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-    font-family: Helvetica;
-    color: black;
+    background-color: #bfbfbf;
+    border: 2px solid black;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 50px 10px 5px 10px;
+    overflow: hidden;
 }
 
 /* Section title regions */
 .corner {
-    position: relative;
-    float: right;
-    padding-left: 20px;
-    padding-right: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: bold;
+    width: 120px;
+    padding: 10px;
     text-align: center;
-    border: 1px solid black;
-    font-size: 125%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 #chicken {
@@ -37,20 +37,15 @@ p {
 
 #beef {
     background-color: maroon;
+    color: white;
 }
 
 #sushi {
     background-color: moccasin;
 }
 
-.text {
-    clear: both;
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
 .region {
-    background-color: gray;
+    position: relative;
 }
 
 /* Simple Responsive Framework. */
@@ -66,9 +61,6 @@ p {
 @media (min-width: 992px) {
     .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
         float: left;
-        border: 1px solid black;
-        margin-left: 5%;
-        margin-right: 5%;
     }
     .col-lg-1 {
         width: 8.33%;
@@ -80,7 +72,7 @@ p {
         width: 25%;
     }
     .col-lg-4 {
-        width: 23%;
+        width: 33.33%;
     }
     .col-lg-5 {
         width: 41.66%;
@@ -112,8 +104,6 @@ p {
 @media (min-width: 768px) and (max-width: 991px) {
     .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
         float: left;
-        border: 1px solid black;
-        margin: 2.5%;
     }
     .col-md-1 {
         width: 8.33%;
@@ -131,7 +121,7 @@ p {
         width: 41.66%;
     }
     .col-md-6 {
-        width: 45%;
+        width: 50%;
     }
     .col-md-7 {
         width: 58.33%;
@@ -157,8 +147,6 @@ p {
 @media (max-width: 767px) {
     .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
         float: left;
-        border: 1px solid black;
-        margin: 5%;
     }
     .col-sm-1 {
         width: 8.33%;
